@@ -40,7 +40,7 @@ ax = elegan.plot_line(x, y, ax=ax, title="Simple graph", gradient=True)
 fig.show()
 ```
 
-[alt text](https://github.com/AlFrauch/EleganPlot/blob/main/pictures/example_2.png)
+![alt text](https://github.com/AlFrauch/EleganPlot/blob/main/pictures/example_2.png)
 ## Вклад
 
 Мы приветствуем вклад в развитие EleganPlot. Пожалуйста, создавайте pull request'ы и открывайте issues для улучшения проекта.

@@ -1,4 +1,4 @@
-from .utils.gradient import gradient_fill
+from .utils.gradient import gradient_fill, gradient_fill_inverse
 from .styles.themes import *
 from .utils.fill import fill_color_axes
 
@@ -25,7 +25,8 @@ def create_figure_and_axes(theme='frauch',**kwargs):
     return fig, ax
 
 
-def plot_line(x, y, ax=None, gradient=False, gradient_fill_min=False, title=None, **kwargs):
+def plot_line(x, y, ax=None, gradient=False, gradient_inverse=False, gradient_fill_max=False,
+              gradient_fill_min=False, title=None, **kwargs):
     if ax is None:
         fig, ax = create_figure_and_axes()
     if current_theme == 'frauch':
@@ -35,6 +36,9 @@ def plot_line(x, y, ax=None, gradient=False, gradient_fill_min=False, title=None
     line, = ax.plot(x, y, color=color_plot, **kwargs)
     if gradient:
         gradient_fill(x, y, line=line, fill_color=color_plot, ax=ax,  gradient_fill_min=gradient_fill_min)
+
+    if gradient_inverse:
+        gradient_fill_inverse(x, y, line=line, fill_color=color_plot, ax=ax,  gradient_fill_max=gradient_fill_max)
     if title is not None:
         ax.set_title(title)
     return ax
