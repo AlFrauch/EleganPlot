@@ -3,8 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (EleganPlot)" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="fd60c47a-5868-4baa-b012-1c06ff7355cc" />
-  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (EleganPlot)" project-jdk-type="Python SDK" />
 </project>
