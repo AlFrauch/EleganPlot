@@ -25,7 +25,7 @@ def create_figure_and_axes(theme='frauch',**kwargs):
     return fig, ax
 
 
-def plot(x, y, ax=None, gradient=False, gradient_fill_min=False, **kwargs):
+def plot(x, y, ax=None, gradient=False, gradient_fill_min=False, title=None, **kwargs):
     if ax is None:
         fig, ax = create_figure_and_axes()
     if current_theme == 'frauch':
@@ -35,4 +35,6 @@ def plot(x, y, ax=None, gradient=False, gradient_fill_min=False, **kwargs):
     line, = ax.plot(x, y, color=color_plot, **kwargs)
     if gradient:
         gradient_fill(x, y, line=line, fill_color=color_plot, ax=ax,  gradient_fill_min=gradient_fill_min)
+    if title is not None:
+        ax.set_title(title)
     return ax
