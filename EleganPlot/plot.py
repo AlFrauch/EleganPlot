@@ -25,7 +25,7 @@ def create_figure_and_axes(theme='frauch',**kwargs):
     return fig, ax
 
 
-def plot(x, y, ax=None, gradient=False, gradient_fill_min=False, title=None, **kwargs):
+def plot_line(x, y, ax=None, gradient=False, gradient_fill_min=False, title=None, **kwargs):
     if ax is None:
         fig, ax = create_figure_and_axes()
     if current_theme == 'frauch':
