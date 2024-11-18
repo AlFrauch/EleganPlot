@@ -4,6 +4,8 @@ EleganPlot - это библиотека на Python, являющаяся об�
 
 
 ## Использование
+<details>
+<summary>Простой график</summary>
 
 ### Пример 1: Построение простого графика
 
@@ -22,8 +24,12 @@ ax = elegan.plot_line(x, y, ax=ax, title="Simple graph")
 fig.show()
 ```
 ![alt text](https://github.com/AlFrauch/EleganPlot/blob/main/pictures/example_1.png)
+</details>
 
-### Пример 3: Построение простого графика c градиентом
+<details>
+<summary>Простой график с градиентной тенью</summary>
+
+### Пример 2: Построение простого графика c градиентом
 
 ```python
 import EleganPlot as elegan
@@ -41,6 +47,8 @@ fig.show()
 ```
 
 ![alt text](https://github.com/AlFrauch/EleganPlot/blob/main/pictures/example_2.png)
+</details>
+
 ## Вклад
 
 Мы приветствуем вклад в развитие EleganPlot. Пожалуйста, создавайте pull request'ы и открывайте issues для улучшения проекта.
